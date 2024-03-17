@@ -1,5 +1,36 @@
 import java.util.Scanner;
-// Импорт класса Scanner из пакета java.util для работы с пользовательским вводом.
+
+
+
+
+
+
+//  Удаление всех знаков препинания и служебных символов (кроме пробела) из строки
+class Shumskiy_C {
+    static void znaki_prep() {
+        Scanner scanner = new Scanner(System.in); // Создаем Scanner для ввода данных с клавиатуры
+        System.out.print("Введите строку: ");
+        String input = scanner.nextLine();
+        String znaki = ".,-_/?!+*:;()<>^"; // Строка со специальными символами, которые мы хотим удалить
+        String vivod = "";
+        for (int i = 0; i < input.length(); i++) { // Проходим по каждому символу во введенной строке
+            char x = input.charAt(i);
+            if (znaki.contains(String.valueOf(x))) { // Если символ является специальным, пропускаем его
+                continue;
+            } else { // иначе добавляем его в строку без специальных знаков
+                vivod = new StringBuilder().append(vivod).append(x).toString();
+            }
+        }
+        System.out.print(vivod);
+
+    }
+}
+
+
+
+
+
+
 
 class Andriyanov_b{
     // Объявление класса Andriyanov_b.
@@ -19,6 +50,7 @@ class Andriyanov_b{
         return 0; // Возвращение значения 0.
     }
 }
+
 
 
 
@@ -84,7 +116,7 @@ class Main {
                     Andriyanov_b.register_bukv();
                     break;
                 case 'c':
-                    //код для задания 'c'
+                    Shumskiy_C.znaki_prep();
                     break;
                 case 'q':
                     System.out.println("Выход из программы.");
