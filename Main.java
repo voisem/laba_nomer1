@@ -1,6 +1,6 @@
 import java.util.Scanner;
 // Импорт класса Scanner из пакета java.util для работы с пользовательским вводом.
-
+// New coment
 class Andriyanov_b{
     // Объявление класса Andriyanov_b.
     public static int register_bukv(){ // Объявление статического метода register_bukv(), возвращающего целочисленное значение.
@@ -16,7 +16,6 @@ class Andriyanov_b{
         System.out.print("Верхний регистр: " + Verhniy + "\n"); // Вывод строки верхнего регистра.
         System.out.print("Нижний регистр: " + Nigniy); // Вывод строки нижнего регистра.
 
-        return 0; // Возвращение значения 0.
     }
 }
 
