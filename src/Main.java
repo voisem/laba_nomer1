@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 
 
-
+//комментарий
 //  Удаление всех знаков препинания и служебных символов (кроме пробела) из строки
 class Shumskiy_C {
     static void znaki_prep() {
         Scanner scanner = new Scanner(System.in); // Создаем Scanner для ввода данных с клавиатуры
         System.out.print("Введите строку: ");
         String input = scanner.nextLine();
-        String znaki = ".,-_/?!+*:;()<>^"; // Строка со специальными символами, которые мы хотим удалить
+        String znaki = ".,-_/?!+*:;()%@$&#[]{}<>^"; // Строка со специальными символами, которые мы хотим удалить
         String vivod = "";
         for (int i = 0; i < input.length(); i++) { // Проходим по каждому символу во введенной строке
             char x = input.charAt(i);
