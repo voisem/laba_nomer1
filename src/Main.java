@@ -11,7 +11,7 @@ class Shumskiy_C {
         Scanner scanner = new Scanner(System.in); // Создаем Scanner для ввода данных с клавиатуры
         System.out.print("Введите строку: ");
         String input = scanner.nextLine();
-        String znaki = ".,-_/?!+*:;()<>^"; // Строка со специальными символами, которые мы хотим удалить
+        String znaki = ".,-_/?!+*:;()<>^"; // Строка со специальными символами, которые мы хотим удалит
         String vivod = "";
         for (int i = 0; i < input.length(); i++) { // Проходим по каждому символу во введенной строке
             char x = input.charAt(i);
