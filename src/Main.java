@@ -5,6 +5,7 @@ import java.util.Scanner;
 class Nalitov_a {
     // ввод строки с клавиатуры, подсчет гласных букв и вывода результата
     static void str_in_and_out() {
+	//HELLO, WORLD!
         System.out.print("Введите строку: ");
 
         Scanner scanner = new Scanner(System.in); // Создаем объект Scanner для считывания ввода с клавиатуры
