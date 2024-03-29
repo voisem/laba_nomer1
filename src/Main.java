@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 
-//dfvj
+//комментарий
 //  Удаление всех знаков препинания и служебных символов (кроме пробела) из строки
 class Shumskiy_C {
     static void znaki_prep() {
